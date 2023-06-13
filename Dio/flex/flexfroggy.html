@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinando FlexBox</title>
+    <style>
+        .quadrado{
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
 </head>
 <body>
-    <main style="display: flex;">
+    <main style="display: flex; flex-direction: column; justify-content: space-between; align-content: space-between; flex-wrap: wrap; height: 900px; background-color: antiquewhite;">
+        <div class="quadrado" style="background-color: aquamarine;">
+            <img src="https://images.pexels.com/photos/13998640/pexels-photo-13998640.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&dpr=1" alt="">
+        </div>
+        <div class="quadrado" style="background-color: rgb(255, 195, 127);"></div>
+        <div class="quadrado" style="background-image: url('https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;"></div>
+        <div class="quadrado" style="background-color: rgb(182, 127, 255);"></div>
+        <div class="quadrado" style="background-color: rgb(157, 255, 127);"></div>
+        <div class="quadrado" style="background-color: rgb(255, 127, 127);"></div>
 
     </main>
 </body>
