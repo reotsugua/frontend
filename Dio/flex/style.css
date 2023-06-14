@@ -8,4 +8,12 @@ body{
 }
 .flex-container {
     display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    
+  }
+  #pond {
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   }
