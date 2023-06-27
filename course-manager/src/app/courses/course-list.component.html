@@ -21,8 +21,7 @@
             <td>{{course.code}}</td>
             <td>{{course.relaseDate}}</td>
             <td>
-                {{course.rating}}
-                <app-star [rating]={{course.rating}}></app-star>
+                <app-star [rating]="course.rating"></app-star>
             </td>
             <td></td>
         </tr>

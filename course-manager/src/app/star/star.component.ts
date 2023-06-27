@@ -7,12 +7,12 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 })
 export class StarComponent implements OnChanges{
   @Input()
-  rating: number = 0;
+  rating: number = 1;
 
   starWidth: number | undefined;
   
   ngOnChanges(): void {
-    this.starWidth = this.rating * 94/5;
+    this.starWidth = this.rating * 74/5;
   }
 
 }
