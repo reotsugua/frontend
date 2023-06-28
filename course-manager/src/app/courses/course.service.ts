@@ -6,7 +6,7 @@ import { Course } from "./course";
 })
 export class CouseService{
 
-    
+
     
     retriveAll(): Course[]{
         return COURSES;
@@ -30,7 +30,7 @@ var COURSES: Course[] = [
         id: 2,
         name: 'Angular: Forms',
         relaseDate: 'November 4, 2019',
-        description: 'Neste curso, os alunos irão obter um conhecimento aprofundado sobre os recursos disponíveis no módulo de Forms.',
+        description: 'Neste curso, os alunos irão obter um grande conhecimento nos principais recursos do CLI.',
         duration: 80,
         code: 'DWQ-3412',
         rating: 3.5,
@@ -41,7 +41,7 @@ var COURSES: Course[] = [
         id: 3,
         name: 'Angular: HTTP',
         relaseDate: 'November 8, 2019',
-        description: 'Neste curso, os alunos irão obter um conhecimento aprofundado sobre os recursos disponíveis no módulo de HTTP.',
+        description: 'Neste curso, os alunos irão obter um grande conhecimento nos principais recursos do CLI.',
         duration: 80,
         code: 'QPL-0913',
         rating: 4.0,
@@ -52,7 +52,7 @@ var COURSES: Course[] = [
         id: 4,
         name: 'Angular: Router',
         relaseDate: 'November 16, 2019',
-        description: 'Neste curso, os alunos irão obter um conhecimento aprofundado sobre os recursos disponíveis no módulo de Router.',
+        description: 'Neste curso, os alunos irão obter um grande conhecimento nos principais recursos do CLI.',
         duration: 80,
         code: 'OHP-1095',
         rating: 4.5,
@@ -63,7 +63,7 @@ var COURSES: Course[] = [
         id: 5,
         name: 'Angular: Animations',
         relaseDate: 'November 25, 2019',
-        description: 'Neste curso, os alunos irão obter um conhecimento aprofundado sobre os recursos disponíveis sobre Animation.',
+        description: 'Neste curso, os alunos irão obter um grande conhecimento nos principais recursos do CLI.',
         duration: 80,
         code: 'PWY-9381',
         rating: 5,
