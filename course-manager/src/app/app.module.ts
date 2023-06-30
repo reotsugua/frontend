@@ -7,6 +7,7 @@ import { CourseListComponent } from './courses/course-list.component';
 import { CalcButtons } from './calculator/calc.component';
 import { StarComponent } from './star/star.component';
 import { ReplacePipe } from './pipe/replace.pipe';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ReplacePipe } from './pipe/replace.pipe';
     CourseListComponent,
     CalcButtons,
     StarComponent,
-    ReplacePipe
+    ReplacePipe,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
