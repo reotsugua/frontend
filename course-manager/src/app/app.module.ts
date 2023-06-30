@@ -8,6 +8,8 @@ import { CalcButtons } from './calculator/calc.component';
 import { StarComponent } from './star/star.component';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
+import { Error404Component } from './error-404/404.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,23 @@ import { NavbarComponent } from './navbar/navbar.component';
     CalcButtons,
     StarComponent,
     ReplacePipe,
-    NavbarComponent
+    NavbarComponent,
+    Error404Component
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      {
+        path: '', redirectTo: 'courses', pathMatch: 'full'
+      },
+      {
+        path: 'courses', component: CourseListComponent
+      }
+      {
+        path: '**', component: Error404Component
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
