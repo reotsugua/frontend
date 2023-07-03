@@ -1,5 +1,5 @@
 export class Course {
-    id: number | undefined;
+    id!: number;
     name!: string;
     imageUrl: string | undefined;
     price: number | undefined;
