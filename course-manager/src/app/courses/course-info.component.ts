@@ -13,14 +13,48 @@ export class CourseInfoComponent implements OnInit{
     constructor(private activatedRoute: ActivatedRoute, private courseService: CouseService) {}
 
     ngOnInit(): void {
-        const courseIdString = this.activatedRoute.snapshot.paramMap.get('id');
-        if (courseIdString) {
-            const courseId = parseInt(courseIdString, 10); // Converte a string em um número inteiro
-            const retrievedCourse = this.courseService.retrieveById(courseId);
-            if (retrievedCourse) {
-                this.course = retrievedCourse;
-            }
+        const id = this.activatedRoute.snapshot.paramMap.get('id');
+        const numericId = id ? parseInt(id, 10) : null; // ou Number(id)
+
+        if (numericId !== null) {
+            this.courseService.retrieveById(numericId).subscribe({
+            next: course => this.course = course,
+            error: err => console.log('Error', err)
+            });
+        } else {
+            console.log('Invalid ID');
         }
+
+
+        // const courseIdString = this.activatedRoute.snapshot.paramMap.get('id');
+        //     if (courseIdString) {
+        //      const courseId = parseInt(courseIdString, 10); // Converte a string em um número inteiro
+        //      this.courseService.retrieveById(courseId).subscribe({
+        //         next: course => this.course = course,
+        //         error: err => console.log('Error', err)
+        //         });     
+                               
+        //     }
+
+
+
+
+
+        // this.courseService.retrieveById(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe({
+        //     next: course => this.course = course,
+        //     error: err => console.log('Error', err)
+        // });
+
+            
+
+        // const courseIdString = this.activatedRoute.snapshot.paramMap.get('id');
+        // if (courseIdString) {
+        //     const courseId = parseInt(courseIdString, 10); // Converte a string em um número inteiro
+        //     const retrievedCourse = this.courseService.retrieveById(courseId);
+        //     if (retrievedCourse) {
+        //         this.course = retrievedCourse;
+        //     }
+        // }
     }
 
     save(): void {
