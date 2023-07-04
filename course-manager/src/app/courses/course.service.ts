@@ -28,8 +28,8 @@ export class CouseService{
         }
     }
 
-    deleteById(id: number): Observable<any> {
-        return this.httpClient.delete<any>(`${this.courseUrl}/${id}`);
+    deleteById(id: number): Observable<number> {
+        return this.httpClient.delete<number>(`${this.courseUrl}/${id}`);
     }
 
 }
