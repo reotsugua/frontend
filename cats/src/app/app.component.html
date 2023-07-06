@@ -1,3 +1,11 @@
-<mat-toolbar></mat-toolbar>
+<mat-toolbar class="d-flex justify-content-between">
+  <!-- <p routerLink="">Sistema de gatos</p> -->
+  <div>
+    <button mat-flat-button routerLink="cats/search">
+      Buscar</button>
+    <button mat-flat-button routerLink="cats/new">
+      Cadastrar</button>
+  </div>
+</mat-toolbar>
 
 <router-outlet></router-outlet>
