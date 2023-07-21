@@ -1,5 +1,5 @@
-const peso = 65;
-const altura = 1.7;
+const peso = 63;
+const altura = 1.75;
 const potenciaAltura = Math.pow(altura, 2);
 const imc = peso / potenciaAltura;
 console.log(imc.toFixed(2))
