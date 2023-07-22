@@ -6,6 +6,7 @@ function calcDesconto(condPagamento, precoEtiqueta){
           return precoEtiqueta - (precoEtiqueta * 0.1);
           
         case 'pix':
+        case 'oi':
             return precoEtiqueta - (precoEtiqueta * 0.15);
             
         case 'duas':
@@ -23,10 +24,10 @@ function imprimir(funcao){
 }
 
 
-function main(){
+(function (){
 
-    imprimir(calcDesconto('duas', 100));
+    imprimir(calcDesconto('pix', 100));
 
-}
+})()
 
-main();
+
