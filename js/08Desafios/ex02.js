@@ -1,27 +1,36 @@
 const {gets, print} = require('./api');
 
-const qtdItems = gets();
-const arrayPar = []
-const arrayImpar = []
-for (let i = 0; i < qtdItems; i++) {
-    let nums = gets()
-    if (nums % 2 == 0 ) {
-        arrayPar.push(nums);
-        
-    } else {
-        arrayImpar.push(nums);
+
+function verificaNum (comprimento, array1, array2){
+    for (let i = 0; i < comprimento; i++) {
+        let numero = gets()
+        if (numero % 2 == 0 ) {
+            array2.push(numero);
+            
+        } else {
+            array1.push(numero);
+        }
     }
+    
+}
+function menorImpar (array1){
+    array1.sort((a,b) => a - b)
+    return array1[0];
+}
+function maiorPar (array2){
+    array2.sort((a,b) => a - b)
+    return array2[array2.length-1];
 }
 
-
-arrayPar.sort((a,b) => a - b)
-arrayImpar.sort((a,b) => a - b)
-
-print(`Maior número par: ${arrayPar[arrayPar.length-1]}`)
-print(`Menor número ímpar: ${arrayImpar[0]}`)
-
 (function(){
+    const qtdItems = gets();
+    const arrayPar = []
+    const arrayImpar = []
     
+    verificaNum(qtdItems, arrayImpar, arrayPar)
+
+    print(`Maior número par: ${maiorPar(arrayPar)}`)
+    print(`Menor número ímpar: ${menorImpar(arrayImpar)}`)
 })()
 
 /*let maiorPar = 0;
