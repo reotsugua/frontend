@@ -1,10 +1,10 @@
-const entradas = [5, 50, 10, 46, 0, 4, 55, 32];
+const entradas = [5, 3, 4, 1, 10, 8];
 let i = 0;
 
 function gets() {
-    const valor = entradas[i];
+    const entrada = entradas[i];
     i++;
-    return valor;
+    return entrada;
 }
 
 function print(params) {
