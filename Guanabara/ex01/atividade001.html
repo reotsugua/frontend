@@ -7,17 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-success">
+<body onload="carregar()">
     <main class="container">
         <header class="text-center text-white mb-3">
-            <h1>Verificador de Idade</h1>
+            <h1 class="fw-bold">Hora do Dia</h1>
         </header>
         <section class="bg-body-tertiary shadow-sm rounded p-3 mb-3">
-            <div class="text-center mb-3">
-                dvi1
+            <div id="msg" class="fw-bold text-center mb-3">
+                Aqui vai aparecer a hora
             </div>       
-            <div class="text-center">
-                div2
+            <div id="foto">
+                <img id="imagem" class="rounded-circle mx-auto d-block" style="height: 200px; width: 200px;"  src="" alt="Foto do dia" >
             </div>     
         </section>
         <footer class="text-center text-white">
