@@ -14,28 +14,30 @@
         </header>
         <section class=" bg-body-tertiary shadow-sm rounded p-4 mb-3">
             <div class="form-floating mb-4">
-                <input type="number" class="form-control" id="floatingInput" placeholder="ano">
+                <input type="number" class="form-control" id="txano" placeholder="ano" min="0">
                 <label for="floatingInput">Ano de Nacimento</label>
             </div>
             <div class="row mb-3">
                 <div class="col-auto">Sexo:</div>
                 <div class="col-auto">
-                    <input class="form-check-input" type="radio" name="sexo">
+                    <input class="form-check-input" type="radio" name="sexo" id="masc" checked>
                     <label class="me-3 form-check-label">
                         Masculino
                     </label>
-                    <input class="form-check-input" type="radio" name="sexo">
+                    <input class="form-check-input" type="radio" name="sexo" id="fem">
                     <label class="form-check-label">
                         Feminino
                     </label>
                 </div>
             </div>
             <div class="col-12 mb-3"> 
-                <button class="col-12 btn btn-primary">Verificar</button>
+                <button class="col-12 btn btn-primary" onclick="verificar()">Verificar</button>
             </div>
             <div class="text-center" id="res">
-                <p>Preencha os dados acima para ver o resultado!</p>
-                <!-- <img class="rounded-circle mx-auto" src="images/manha.jpg" alt="" style="height: 20rem; width: 20rem;"> -->
+                <p class="fs-5">
+                    Preencha os dados acima para ver o resultado!
+                </p>
+                <!-- <img class="rounded-circle mx-auto object-fit-cover mt-3 w-75" src="images/mulher.jpg"> -->
             </div>     
         </section>
         <footer>
