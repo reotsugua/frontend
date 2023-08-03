@@ -3,8 +3,11 @@ const smasc = document.querySelector('input#masc')
 const resultado = document.querySelector('div#res')
 
 
-function ismen(boolean, funcao) {
+function ismen(boolean) {
     
+    if (boolean && maioridade(nasc) == 'criança') {
+        return 11
+    } else 
     if (boolean && maioridade(nasc) == 'criança') {
         return 11
     } else if (boolean && maioridade(nasc) == 'adolescente'){
@@ -21,7 +24,7 @@ function ismen(boolean, funcao) {
         return 23
     } else if (!boolean && maioridade(nasc) == 'idoso'){
         return 24
-    }
+    } 
 }
 
 
@@ -85,7 +88,9 @@ function verificar() {
 
 
 function maioridade(anoNasc) {
-    const idade = parseInt(2023 - anoNasc.value)
+    const data = new Date()
+    const ano = data.getFullYear()
+    const idade = parseInt(ano - anoNasc.value)
     let tipo;
 
     if (idade <= 12 ) {
