@@ -33,28 +33,50 @@ function verificar() {
             resultado.innerHTML = `<p class="fs-5">
                 É um menino
                 </p>
-                <img class="rounded-circle mx-auto object-fit-cover mt-3 w-100" src="images/menino.jpg">`
+                <img class="rounded-circle mx-auto object-fit-cover mt-3" src="images/menino.jpg">`
             break;
         case 12:
             resultado.innerHTML = `<p class="fs-5">
                 É um garoto
                 </p>
-                <img class="rounded-circle mx-auto object-fit-cover mt-3 w-100" src="images/garoto.jpg">`
+                <img class="rounded-circle mx-auto object-fit-cover mt-3" src="images/garoto.jpg">`
             break;
         case 13:
             resultado.innerHTML = `<p class="fs-5">
                 É um homem
                 </p>
-                <img class="rounded-circle mx-auto object-fit-cover mt-3 w-100" src="images/homem.jpg">`
+                <img class="rounded-circle mx-auto object-fit-cover mt-3" src="images/homem.jpg">`
             break;
-            
         case 14:
             resultado.innerHTML = `<p class="fs-5">
                 É um Idoso
                 </p>
-                <img class="rounded-circle mx-auto object-fit-cover mt-3 w-100" src="images/idoso.jpg">`
+                <img class="rounded-circle mx-auto object-fit-cover mt-3" src="images/idoso.jpg">`
             break;
-       
+        case 21:
+            resultado.innerHTML = `<p class="fs-5">
+                    É um menina
+                    </p>
+                    <img class="rounded-circle mx-auto object-fit-cover mt-3" src="images/menina.jpg">`
+                break;
+            case 22:
+                resultado.innerHTML = `<p class="fs-5">
+                    É um garoto
+                    </p>
+                    <img class="rounded-circle mx-auto object-fit-cover mt-3" src="images/garota.jpg">`
+                break;
+            case 23:
+                resultado.innerHTML = `<p class="fs-5">
+                    É um homem
+                    </p>
+                    <img class="rounded-circle mx-auto object-fit-cover mt-3" src="images/mulher.jpg">`
+                break;
+            case 24:
+                resultado.innerHTML = `<p class="fs-5">
+                    É um Idoso
+                    </p>
+                    <img class="rounded-circle mx-auto object-fit-cover mt-3" src="images/idosa.jpg">`
+                break;
         default:
             console.log('deu ruim')
             break;
